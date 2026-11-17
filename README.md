@@ -19,6 +19,10 @@ Eventora is a full-stack MERN application that allows users to seamlessly browse
 - **Email Notifications**: Automated email delivery upon successful booking confirmation using Nodemailer.
 - **Sleek UI/UX**: Built entirely with React, Tailwind CSS, and polished with micro-interactions.
 
+## Deploying the frontend on Vercel
+
+Import the repository with the Vercel project Root Directory set to the repository root. The included `vercel.json` installs and builds the client, publishes `client/dist`, and supports direct links to React routes. Set the Vercel environment variable `VITE_API_URL` to your deployed backend API URL, including `/api` (for example, `https://your-backend.example.com/api`), then redeploy. The Express server and MongoDB must be deployed and configured separately; the local API fallback only works on your own computer.
+
 ---
 
 ## 🚀 Setup Instructions
