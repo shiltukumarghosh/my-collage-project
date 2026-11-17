@@ -65,7 +65,8 @@ exports.login = async (req, res) => {
             token: generateToken(user.id, user.role)
         });
     } catch (error) {
-        res.status(500).json({ message: 'Server Error', error: error.message });
+        console.error('Login failed:', error.name);
+        res.status(500).json({ message: 'Login failed due to a server configuration error.' });
     }
 };
 
